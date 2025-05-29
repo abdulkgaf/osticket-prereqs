@@ -23,6 +23,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 ## Installation Steps
 
+![1](https://github.com/user-attachments/assets/051cda8c-068d-4d33-bc24-76edfe7f5fba)
 
 
 ### Step 1: Create Virtual Machine in Azure
@@ -40,6 +41,9 @@ Create a new Virtual Machine (VM) in Microsoft Azure:
 - Open Remote Desktop Connection on your local machine
 - Enter the VM's public IP address
 - Log in with the credentials you created
+
+![Screenshot 2025-05-28 100354](https://github.com/user-attachments/assets/572c6f5b-be9b-409a-8a1f-e42cd84135cd)
+
 
 ### Step 3: Enable IIS in Windows
 Within the VM, enable Internet Information Services:
@@ -61,6 +65,8 @@ Within the VM, enable Internet Information Services:
 - Run the installer with default settings
 - This module is required for osTicket's clean URLs
 
+![Screenshot 2025-05-28 100530](https://github.com/user-attachments/assets/a0334d00-790d-4167-a609-a3ef4f873219)
+
 ### Step 6: Create PHP Directory and Extract Files
 - Create a new folder C:\PHP
 - Download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip)
@@ -81,6 +87,8 @@ Within the VM, enable Internet Information Services:
 - Create root password (remember this password!)
 - Execute configuration
 
+![Screenshot 2025-05-28 100721](https://github.com/user-attachments/assets/819dc46b-033a-424c-8238-a7920a9150ab)
+
 ### Step 9: Configure PHP in IIS
 Open IIS as Administrator:
 - Open IIS Manager
@@ -96,6 +104,8 @@ Open IIS as Administrator:
 - In IIS Manager, go to Sites → Default Web Site → osTicket
 - On the right side, click "Browse *:80"
 
+![Screenshot 2025-05-28 100827](https://github.com/user-attachments/assets/f3c8d697-d57f-4dbd-8ad5-3f1521ac5858)
+
 ### Step 11: Enable PHP Extensions
 In IIS Manager, go to osTicket folder:
 - Double-click PHP Manager
@@ -105,6 +115,8 @@ In IIS Manager, go to osTicket folder:
   - php_intl.dll
   - php_opcache.dll
 - Refresh the osTicket site in browser to see changes
+
+![Screenshot 2025-05-28 100956](https://github.com/user-attachments/assets/650e957a-dcfd-4c1f-8bb5-e6fdb79a1f8e)
 
 ### Step 12: Configure osTicket Settings
 - Navigate to C:\inetpub\wwwroot\osTicket\include\
